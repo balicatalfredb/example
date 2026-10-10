@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>War — Card Game</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body>
+<main class="table">
+<header><div><span class="eyebrow">THE CLASSIC CARD GAME</span><h1>WAR<span>♠</span></h1></div><button id="help" class="secondary">How to Play</button></header>
+<section class="side" aria-label="Computer cards"><div class="label"><h2>Computer</h2><span><b id="computer-count">0</b> cards</span></div><div class="hand"><div class="deck" aria-label="Computer's face-down pile">♠</div><div id="computer-card" class="card-slot" aria-label="Computer's revealed card"></div><span id="computer-down" class="down-note"></span></div></section>
+<section class="center"><div class="stats"><span>Battle <b id="battle-count">0</b></span><span>Rounds <b id="round-count">0</b></span></div><h2 id="message" role="status" aria-live="polite">Ready for battle?</h2><p id="detail">Win all 52 cards to claim the table.</p></section>
+<section class="side" aria-label="Your cards"><div class="hand"><div class="deck" aria-label="Your face-down pile">♠</div><div id="player-card" class="card-slot" aria-label="Your revealed card"></div><span id="player-down" class="down-note"></span></div><div class="label"><h2>You</h2><span><b id="player-count">0</b> cards</span></div></section>
+<footer><button id="start">Start Game</button><button id="flip" disabled>Flip Cards <span>↗</span></button><button id="restart" class="secondary" disabled>Restart Game</button></footer><p class="footnote">One deck. Equal chances. Winner takes all.</p>
+</main>
+<dialog id="rules"><h2>How to Play</h2><ol><li>Start with 26 face-down cards each.</li><li>Click Flip Cards. The higher card wins both cards and adds them to the bottom of its pile.</li><li>Ranks: 2–10, Jack, Queen, King, Ace. Suits do not matter.</li><li>A tie starts WAR! Click again to place one card face down and one face up per side. The higher face-up card wins the whole battle.</li><li>Another tie repeats war. With only one card, reveal it directly. A side with no cards loses and the opponent takes the battle. If both run out in an unresolved war, it is a draw.</li><li>Win all 52 cards to win the game.</li></ol><p>Restart Game shuffles and deals a fresh game. War can last a long time.</p><button id="close-rules">Got it</button></dialog>
+</body></html>
